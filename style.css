@@ -14,8 +14,6 @@ header {
   width: 100%;
   background-color: rgb(85, 173, 155);
   color: white;
-
-
 }
 
 header h2 {
@@ -24,8 +22,6 @@ header h2 {
   border-left: 5px solid;
   border-radius: 50%;
   padding-left: 5px;
-
-
 }
 
 header ul {
@@ -46,12 +42,9 @@ header ul li a {
 }
 
 /* inputdiv */
-
 .inputDiv {
   text-align: center;
-
-  width: 100%;
- 
+  width: 100%; 
 }
 
 input {
@@ -61,7 +54,6 @@ input {
   margin-left: 10px;
   border-radius: 4px;
   padding-left: 5px;
-
 }
 
 .inputDiv button {
@@ -72,8 +64,6 @@ input {
   background-color: black;
   color: white;
   font-weight: bold;
-
-
 }
 
 /* job-Section */
@@ -81,7 +71,6 @@ input {
   display: flex;
   gap: 30px;
   justify-content: center;
-
 }
 
 
@@ -91,7 +80,6 @@ input {
   overflow: scroll;
   scroll-behavior: smooth;
   margin-top: 15px;
-
 }
 
 .left-div::-webkit-scrollbar {
@@ -130,6 +118,7 @@ input {
   margin-top: 15px;
   width: 600px;
   border: 1px solid #ccc;
+  border-radius: 20px;
   box-shadow: rgba(8, 230, 171, 0.25) 0px 30px 60px -12px inset, rgba(13, 220, 130, 0.8) 0px 18px 36px -18px inset;
 }
 
@@ -182,10 +171,9 @@ input {
 /* marquee code here */
 .marquee-div{
   width: 100%;
-  background-color: black;
-  
-
+  background-color: black; 
 }
+
 .marquee-div marquee{
   width: 75%;  
   color: white;
