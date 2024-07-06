@@ -1,6 +1,7 @@
 import './style.css'
 import { renderHeader } from './header'
 import{renderData, filterData, jobSectionData, displayJobDetails }from './job-section.js';
+import { renderFooter } from './footer.js';
 
 
 
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
     renderData(jobSectionData) ;
     displayJobDetails()
+    renderFooter()
     document.getElementById('searchButton').addEventListener('click', filterData);  
 
 })

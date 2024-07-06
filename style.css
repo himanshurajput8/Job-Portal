@@ -197,6 +197,17 @@ input {
 .marquee-div marquee::first-letter{
   font-size: 3rem;
 }
+footer{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
 /* responsive code here */
 @media only screen and (max-width:600px){
@@ -216,5 +227,11 @@ input {
  .inputDiv button{
   margin-top: 10px;
  }
+ .section-container {
+  
+  padding: 2px;
+
+ 
+}
   
 }
