@@ -1,0 +1,202 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  align-items: center;
+  padding: 20px 15px 8px 15px;
+  width: 100%;
+  background-color: rgb(85, 173, 155);
+  color: white;
+
+
+}
+
+header h2 {
+  font-size: 2rem;
+  color: black;
+  border-left: 5px solid;
+  border-radius: 50%;
+  padding-left: 5px;
+
+
+}
+
+header ul {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style-type: none;
+  font-size: 1.1em;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* inputdiv */
+
+.inputDiv {
+  text-align: center;
+
+  width: 100%;
+ 
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 10px;
+  border-radius: 4px;
+  padding-left: 5px;
+
+}
+
+.inputDiv button {
+  margin-left: 10px;
+  width: 70px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+
+
+}
+
+/* job-Section */
+.section-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+}
+
+
+.left-div {
+  width: 500px;
+  height: 500px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  margin-top: 15px;
+
+}
+
+.left-div::-webkit-scrollbar {
+  display: none;
+}
+
+.left-div li {
+  border: 1px solid #ccc;
+  width: 500px;
+  height: 300px;
+  list-style-type: none;
+  padding: 15px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  background-color: #95D2B3;
+  color: black;
+  border-radius: 20px;
+
+}
+
+.left-div li h2 {
+  margin-bottom: 20px;
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.left-div li span {
+  font-weight: bold;
+  font-size: larger;
+  padding-right: 20px;
+}
+
+/* right-div */
+.right-div {
+  margin-top: 15px;
+  width: 600px;
+  border: 1px solid #ccc;
+  box-shadow: rgba(8, 230, 171, 0.25) 0px 30px 60px -12px inset, rgba(13, 220, 130, 0.8) 0px 18px 36px -18px inset;
+}
+
+.inner-right-div1 {
+  line-height: 30px;
+  padding: 20px;
+  box-shadow: rgba(8, 212, 165, 0.1) 0px 20px 25px -5px, rgba(10, 217, 145, 0.2) 0px 10px 10px -5px;
+}
+
+.inner-right-div1 p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.inner-right-div1 button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 8px 13px;
+  margin: 10px 0px 10px 0px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.inner-right-div1 h2 {
+  margin-bottom: 20px;
+}
+
+/*  */
+.inner-right-div2 {
+  padding: 20px;
+  line-height: 30px;
+}
+
+.inner-right-div2>:nth-child(1) {
+  margin: 20px 0px 30px 0px;
+}
+
+.inner-right-div2 span {
+  background-color: lightgray;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.inner-right-div2>:nth-child(6) {
+  margin: 30px 0px 10px 0px;
+}
+
+/* marquee code here */
+.marquee-div{
+  width: 100%;
+  background-color: black;
+  
+
+}
+.marquee-div marquee{
+  width: 75%;  
+  color: white;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  box-shadow: rgba(6, 231, 167, 0.4) 0px 5px, rgba(6, 226, 149, 0.3) 0px 10px, rgba(5, 231, 159, 0.2) 0px 15px, rgba(5, 225, 177, 0.1) 0px 20px, rgba(6, 232, 183, 0.05) 0px 25px;
+
+}
+.marquee-div marquee::first-letter{
+  font-size: 3rem;
+}
