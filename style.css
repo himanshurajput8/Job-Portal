@@ -249,7 +249,7 @@ footer{
         padding: 2px; 
       } 
       .right-div img{        
-        width: 280px;
+        width: 250px;        
       }
       .section-container{
         gap: 5px;
@@ -259,7 +259,11 @@ footer{
         padding: 5px;        
       }
       .left-div li h2 {       
-        font-size: 2rem;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        font-family: "Baskervville SC", serif;
+        font-weight: 800;
+  
       }
      
 }
