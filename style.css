@@ -148,6 +148,7 @@ input {
   border: 1px solid #ccc;
   border-radius: 20px;
   padding-left: 20px;
+  background-color: white;
   /* box-shadow: rgba(55, 151, 119, 0.25) 0px 30px 60px -12px inset, rgba(55, 151, 119, 0.8) 0px 18px 36px -18px inset;  */
 }
 .right-div::-webkit-scrollbar {
@@ -157,6 +158,12 @@ input {
   border: 1px solid black;
   
 }
+
+.right-div img{
+  float: right;
+  width: 380px;
+}
+
 
 .inner-right-div1 {
   line-height: 30px;
@@ -209,11 +216,6 @@ input {
   margin: 30px 0px 10px 0px;
 }
 
-/* marquee code here */
-.marquee-div{
-  width: 100%;
-  background-color: black; 
-}
 
 footer{
   display: flex;
@@ -229,26 +231,29 @@ footer{
 
 /* responsive code here */
 @media only screen and (max-width:600px){
-  header ul li{
-    display: none;    
-  }
- 
-  
- .inputDiv{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 0px;
- }
- .inputDiv button{  
-  margin-top: 10px;
- }
- .section-container {
-  
-  padding: 2px; 
-} 
-   
+        header ul li{
+          display: none;    
+        }
+      
+        
+      .inputDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+      }
+      .inputDiv button{  
+        margin-top: 10px;
+      }
+      .section-container {
+        
+        padding: 2px; 
+      } 
+      .right-div img{        
+        width: 280px;
+      }
+     
 }
 #get-start button {
   margin-top: 350px;
@@ -276,7 +281,7 @@ form button{
   /* padding: 8px 15px; */
   background-color: black;
   color: white;
-  margin-top: 30px;
+  margin-top: 30px; 
   outline: none;
   border: none;
   width: 400px;
@@ -288,5 +293,4 @@ form input{
   width: 400px;
   border-radius: 5px;
 }
-
 

@@ -1,17 +1,17 @@
 import { navigate } from './router.js'; 
 
  export var jobSectionData = [
-    {id: "1", position: 'Front-end developer',imageurl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjpmXprW5d_g3p4XOL6K8dSXDZt8Z6ai5QQ&s", company: 'Onea Technology Pvt Ltd', Location: 'Noida, Uttar Pradesh',jobType: 'Part time', description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "2", position: 'Java developer',imageurl: "", company: 'TCS', Location: 'Noida',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "3", position: 'Python developer', company: 'TCS', Location: 'Delhi',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "4", position: 'PHP developer', company: 'TCS', Location: 'Ghaziabad',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "5", position: '.Net developer', company: 'TCS', Location: 'Hyderabad',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "6", position: 'Azure developer', company: 'TCS', Location: 'Meerut',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "7", position: 'Android developer', company: 'TCS', Location: 'Chandigarh',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "8", position: 'IOS developer', company: 'TCS', Location: 'Bangalore',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "9", position: 'Java FullStack developer', company: 'Faridabad', Location: 'Noida',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "10", position: ' developer', company: 'TCS', Location: 'Gurgaon',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
-    {id: "11", position: 'Web developer', company: 'wipro', Location: 'Delhi',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "1", position: 'Front-end developer',imageurl:"https://wallpapers.com/images/hd/web-developer-programming-languages-isometric-xwr4p5e0ind4mqu6-xwr4p5e0ind4mqu6.png", company: 'Onea Technology Pvt Ltd', Location: 'Noida, Uttar Pradesh',jobType: 'Part time', description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "2", position: 'Java developer', imageurl:"https://media.licdn.com/dms/image/D5612AQEhKguQVjXr4g/article-cover_image-shrink_600_2000/0/1693971265825?e=2147483647&v=beta&t=vRAWRIEHIp6sKRbLxQ_QmHTgjmTRYhj8vOLwlhskjzg", company: 'TCS', Location: 'Noida',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "3", position: 'Python developer', imageurl: "https://www.digiwebart.com/wp-content/uploads/2018/08/Difference-between-Web-Designing-and-Web-Development.png", company: 'TCS', Location: 'Delhi',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "4", position: 'PHP developer',imageurl: "https://wallpapers.com/images/hd/web-developer-programming-languages-isometric-xwr4p5e0ind4mqu6-xwr4p5e0ind4mqu6.png", company: 'TCS', Location: 'Ghaziabad',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "5", position: '.Net developer', imageurl: "https://media.licdn.com/dms/image/D5612AQEhKguQVjXr4g/article-cover_image-shrink_600_2000/0/1693971265825?e=2147483647&v=beta&t=vRAWRIEHIp6sKRbLxQ_QmHTgjmTRYhj8vOLwlhskjzg", company: 'TCS', Location: 'Hyderabad',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "6", position: 'Azure developer',imageurl:"https://wallpapers.com/images/hd/web-developer-programming-languages-isometric-xwr4p5e0ind4mqu6-xwr4p5e0ind4mqu6.png", company: 'TCS', Location: 'Meerut',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "7", position: 'Android developer',imageurl:"https://www.digiwebart.com/wp-content/uploads/2018/08/Difference-between-Web-Designing-and-Web-Development.png", company: 'TCS', Location: 'Chandigarh',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "8", position: 'IOS developer', imageurl:"https://wallpapers.com/images/hd/web-developer-programming-languages-isometric-xwr4p5e0ind4mqu6-xwr4p5e0ind4mqu6.png", company: 'TCS', Location: 'Bangalore',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "9", position: 'Java FullStack developer',imageurl:"https://i.pinimg.com/originals/0f/41/50/0f4150b62f13e9b88310e35c95a2f4e3.png", company: 'Faridabad', Location: 'Noida',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "10", position: ' developer',imageurl:"https://www.digiwebart.com/wp-content/uploads/2018/08/Difference-between-Web-Designing-and-Web-Development.png", company: 'TCS', Location: 'Gurgaon',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
+    {id: "11", position: 'Web developer',imageurl:"https://wallpapers.com/images/hd/web-developer-programming-languages-isometric-xwr4p5e0ind4mqu6-xwr4p5e0ind4mqu6.png", company: 'wipro', Location: 'Delhi',jobType: 'Part time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
     
 ]
 
@@ -19,7 +19,7 @@ import { navigate } from './router.js';
 export function renderData(jobSectionData){
     var renderjobSectionData = jobSectionData.map(function(item){ 
         return `        
-            <li data-id="${item.id}">                
+            <li data-id="${item.id}">                        
                 <h2>${item.position}</h2><hr>                          
                 <p><span>Company:</span>  ${item.company}</p>
                 <p><span>Location:</span> ${item.Location}</p>
@@ -50,7 +50,8 @@ export function displayJobDetails(dataId) {
     if (job) {
         var jobDetails = `
             <div class="inner-right-div1">
-                <h2>Position: ${job.position}</h2>
+                 <h2>Position: ${job.position}</h2>
+                <div class="img-div"><img src="${job.imageurl}"></div>               
                 <p><span>Company: </span>${job.company}</p>
                 <p><span>Location:</span> ${job.Location}</p>
                 <button class="apply-now" data-id="${job.id}">Apply now</button>
