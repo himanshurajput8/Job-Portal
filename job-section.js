@@ -1,3 +1,5 @@
+import { navigate } from './router.js'; 
+
  export var jobSectionData = [
     {id: "1", position: 'Front-end developer',imageurl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjpmXprW5d_g3p4XOL6K8dSXDZt8Z6ai5QQ&s", company: 'Onea Technology Pvt Ltd', Location: 'Noida, Uttar Pradesh',jobType: 'Part time', description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
     {id: "2", position: 'Java developer',imageurl: "", company: 'TCS', Location: 'Noida',jobType: 'Full time', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt at laudantium mollitia dolore atque veniam iusto odit tempora possimus?'},
@@ -13,6 +15,7 @@
     
 ]
 
+
 export function renderData(jobSectionData){
     var renderjobSectionData = jobSectionData.map(function(item){ 
         return `        
@@ -20,23 +23,26 @@ export function renderData(jobSectionData){
                 <h2>${item.position}</h2><hr>                          
                 <p><span>Company:</span>  ${item.company}</p>
                 <p><span>Location:</span> ${item.Location}</p>
-                <p><span>Description:</span>  ${item.description}</p>                  
+                <p><span>Description:</span>  ${item.description}</p> 
+                <h2>Job Details</h2>  
+                                
             </li>
             `        
         }).join(" ");
-         document.querySelector('.left-div ul').innerHTML = renderjobSectionData;
+         document.querySelector('.left-div ul').innerHTML = renderjobSectionData; 
      
-     // Add event listeners to li elements
+     // Add event listeners to li elements click and shown in rightDiv
      document.querySelectorAll('.left-div ul li').forEach(function(item) {
         item.addEventListener('click', function() {
             var dataId = this.getAttribute('data-id');
-            displayJobDetails(dataId); 
+            displayJobDetails(dataId);             
         });
     });
     displayJobDetails(jobSectionData[0].id);  
-
 }
 
+
+//function when click li then li will shown in rightDiv
 export function displayJobDetails(dataId) {
     var job = jobSectionData.find(function(item) {
         return item.id == dataId;
@@ -47,7 +53,7 @@ export function displayJobDetails(dataId) {
                 <h2>Position: ${job.position}</h2>
                 <p><span>Company: </span>${job.company}</p>
                 <p><span>Location:</span> ${job.Location}</p>
-                <button>Apply now</button>
+                <button class="apply-now" data-id="${job.id}">Apply now</button>
             </div> 
             <div class="inner-right-div2"> 
                 <h2>Job Details</h2>  
@@ -57,13 +63,17 @@ export function displayJobDetails(dataId) {
                 <span>Day shift</span><hr>
                 <h2>Location</h2>
                 <p>${job.Location}<p>
-                <p>${job.description}</p>
+                <p>${job.description}</p>  
             </div>                   
         `;
         document.querySelector('.right-div').innerHTML = jobDetails;
+        document.querySelector('.apply-now').addEventListener('click', function() {          
+            const id = this.getAttribute('data-id'); 
+            navigate(`/apply/${id}`);                               
+        });
     }
 }
-// function filter data 
+// function filter data when search
 export function filterData() {
     var location = document.getElementById('locationSearch').value.toLowerCase();
     var Company = document.getElementById('companySearch').value.toLowerCase();
@@ -76,4 +86,21 @@ export function filterData() {
     renderData(filteredData); 
 }  
 
-// 
+// apply job form 
+
+export function jobForm(job) {      
+    const formTemplate = `
+    <div class="form-div">
+        <form>
+            <h2>Apply for ${job.position} at ${job.company}</h2>
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="E-mail">
+            <input type="text" placeholder="mob. no.">
+            <input type="text" placeholder="D.O.B">
+            <button>Submit</button>
+        </form>;
+    </div> `   
+    document.querySelector('#app').innerHTML = formTemplate 
+}
+
+

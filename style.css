@@ -3,6 +3,14 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+ font-weight: 400;
+  font-style: normal;
+  background-color: #FBF6E2;
+ 
+}
 
 header {
   display: flex;
@@ -12,7 +20,7 @@ header {
   align-items: center;
   padding: 20px 15px 8px 15px;
   width: 100%;
-  background-color: rgb(85, 173, 155);
+  background-color: #E68369 ; 
   color: white;
 }
 
@@ -40,11 +48,15 @@ header ul li a {
   text-decoration: none;
   color: white;
 }
+header ul li a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
 
 /* inputdiv */
 .inputDiv {
   text-align: center;
-  width: 100%; 
+  width: 100%;  
 }
 
 input {
@@ -65,14 +77,18 @@ input {
   color: white;
   font-weight: bold;
 }
+.inputDiv button:hover{
+  background-color: rgb(46, 46, 46);
+  transform: scale(1.1);
+}
 
 /* job-Section */
 .section-container {
   width: 100%;
   display: flex;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
-  padding: 0px 15% 0px 15% ;
+  padding: 0px 5% 0px 5% ;
   border-radius: 20px;
  
 }
@@ -98,10 +114,16 @@ input {
   padding: 15px;
   margin-bottom: 15px;
   line-height: 30px;
-  background-color: #95D2B3;
+  background-color: #ECCEAE;
   color: black;
   border-radius: 20px;
 
+}
+
+.left-div li:hover{
+  background-color: #E68369;
+ 
+  /* transform: scale(0.97); */
 }
 
 .left-div li h2 {
@@ -120,21 +142,26 @@ input {
 /* right-div */
 .right-div {
   margin-top: 15px;
-  width: 50%;
+  width: 95%;
   height: 100vh;
   overflow: scroll;
   border: 1px solid #ccc;
   border-radius: 20px;
-  box-shadow: rgba(8, 230, 171, 0.25) 0px 30px 60px -12px inset, rgba(13, 220, 130, 0.8) 0px 18px 36px -18px inset;
+  padding-left: 20px;
+  /* box-shadow: rgba(55, 151, 119, 0.25) 0px 30px 60px -12px inset, rgba(55, 151, 119, 0.8) 0px 18px 36px -18px inset;  */
 }
 .right-div::-webkit-scrollbar {
   display: none;
+}
+.right-div:hover{
+  border: 1px solid black;
+  
 }
 
 .inner-right-div1 {
   line-height: 30px;
   padding: 20px;
-  box-shadow: rgba(8, 212, 165, 0.1) 0px 20px 25px -5px, rgba(10, 217, 145, 0.2) 0px 10px 10px -5px;
+  /* box-shadow: rgba(8, 212, 165, 0.1) 0px 20px 25px -5px, rgba(10, 217, 145, 0.2) 0px 10px 10px -5px; */
 }
 
 .inner-right-div1 p span {
@@ -151,6 +178,11 @@ input {
   border: none;
   outline: none;
   border-radius: 3px;
+}
+.inner-right-div1 button:hover{
+  background-color: rgb(46, 46, 46);
+  transform: scale(1.1);
+ 
 }
 
 .inner-right-div1 h2 {
@@ -183,20 +215,6 @@ input {
   background-color: black; 
 }
 
-.marquee-div marquee{
-  width: 75%;  
-  color: white;
-  letter-spacing: 2px;
-  word-spacing: 10px;
-  font-family: "Baskervville SC", serif;
-  font-weight: 400;
-  font-size: 2.2rem;
-  box-shadow: rgba(6, 231, 167, 0.4) 0px 5px, rgba(6, 226, 149, 0.3) 0px 10px, rgba(5, 231, 159, 0.2) 0px 15px, rgba(5, 225, 177, 0.1) 0px 20px, rgba(6, 232, 183, 0.05) 0px 25px;
-
-}
-.marquee-div marquee::first-letter{
-  font-size: 3rem;
-}
 footer{
   display: flex;
   width: 100%;
@@ -212,11 +230,10 @@ footer{
 /* responsive code here */
 @media only screen and (max-width:600px){
   header ul li{
-    display: none;
+    display: none;    
   }
-  .marquee-div marquee{
-    width: 100%;
-  }
+ 
+  
  .inputDiv{
   display: flex;
   justify-content: center;
@@ -224,14 +241,52 @@ footer{
   flex-direction: column;
   gap: 0px;
  }
- .inputDiv button{
+ .inputDiv button{  
   margin-top: 10px;
  }
  .section-container {
   
-  padding: 2px;
+  padding: 2px; 
+} 
+   
+}
+#get-start button {
+  margin-top: 350px;
+  margin-left: 750px;
+  padding: 5px;
+  background-color: blue; 
+  color: white; 
+}
 
- 
+/* apply job form  */
+.form-div{
+  width: 100%;
+  height: 100vh;
+  background-color: #E68369;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
-  
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+form button{
+  /* padding: 8px 15px; */
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: large;
+}
+form input{
+  width: 400px;
+  border-radius: 5px;
+}
+
+
