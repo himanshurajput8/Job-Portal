@@ -17,15 +17,14 @@ function getRoute() {
 //
 export function router() {
     const { path, id } = getRoute(); 
-    const route = routes[path] 
-    if(route) {
+    const route = routes[path]    
     if (path === '/apply/:id') {
       route(id);
     } else {
       route();
     }
   }
-}
+
 //
 export function navigate(url) {
   history.pushState({}, '', url);

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
                             </div>` ;
     
     renderData(jobSectionData) ;    
-    displayJobDetails(dataId)    
+    displayJobDetails()    
     jobForm() 
     renderFooter()     
     document.getElementById('searchButton').addEventListener('click', filterData); 
