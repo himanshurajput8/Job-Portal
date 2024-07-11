@@ -41,7 +41,6 @@ export function renderData(jobSectionData){
     displayJobDetails(jobSectionData[0].id);  
 }
 
-
 //function when click li then li will shown in rightDiv
 export function displayJobDetails(dataId) {
     var job = jobSectionData.find(function(item) {
@@ -70,7 +69,8 @@ export function displayJobDetails(dataId) {
         document.querySelector('.right-div').innerHTML = jobDetails;
         document.querySelector('.apply-now').addEventListener('click', function() {          
             const id = this.getAttribute('data-id'); 
-            navigate(`/apply/${id}`);                               
+            navigate(`/apply/${id}`);
+                                         
         });
     }
 }
@@ -103,5 +103,8 @@ export function jobForm(job) {
     </div> `   
     document.querySelector('#app').innerHTML = formTemplate 
 }
+
+
+
 
 
