@@ -19,7 +19,7 @@ import { navigate } from './router.js';
 export function renderData(jobSectionData){
     if (jobSectionData.length === 0) {
         document.querySelector('.left-div ul').innerHTML = '<div class="jobNotFound-container"><div class= "jobNotFound" id="animate-div">Job Not Found </div></div>';               
-        document.querySelector('.right-div').innerHTML = '<div class="jobNotFound-img-container"><img src="/public/jobNotFound-img.png"></div>';
+        document.querySelector('.right-div').innerHTML = '<div class="jobNotFound-img-container"><div><img src="/public/jobNotFound-img.png"></div></div>';
         return;
     }
     var renderjobSectionData = jobSectionData.map(function(item){ 

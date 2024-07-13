@@ -288,12 +288,12 @@ form input{
   animation-duration: 1s;
  animation-iteration-count: infinite;
 }
-.jobNotFound-img-container img{
-  width: 450px; 
- position: absolute;
- top: 250px;
- right: 250px;
-  
+.jobNotFound-img-container {  
+  width: 100%;
+  height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;  
 }
 
 footer{
@@ -336,6 +336,7 @@ footer{
         gap: 5px;
         padding: 2%;
       }
+      
       .left-div li{
         padding: 5px;        
       }
@@ -346,15 +347,11 @@ footer{
         font-weight: 800;  
       }   
       .jobNotFound{
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
       } 
       .jobNotFound-img-container img{
-        width: 280px; 
-       position: absolute;
-       top: 610px;
-       left: 210px;
-        
+        width: 280px;              
       }
 }
 
