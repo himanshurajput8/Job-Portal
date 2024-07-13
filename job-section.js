@@ -19,7 +19,7 @@ import { navigate } from './router.js';
 export function renderData(jobSectionData){
     if (jobSectionData.length === 0) {
         document.querySelector('.left-div ul').innerHTML = '<div class="jobNotFound-container"><div class= "jobNotFound" id="animate-div">Job Not Found </div></div>';               
-        document.querySelector('.right-div').innerHTML = '<div class="jobNotFound-img-container"><div><img src="/public/jobNotFound-img.png"></div></div>';
+        document.querySelector('.right-div').innerHTML = '<div class="jobNotFound-img-container"><div><img src="https://cdni.iconscout.com/illustration/premium/thumb/job-not-found-9151703-7463831.png"></div></div>';
         return;
     }
     var renderjobSectionData = jobSectionData.map(function(item){ 
