@@ -1,11 +1,13 @@
 import { filterData } from "./job-section";
+import { jobSectionData } from "./job-section";
+import { renderData } from "./job-section";
 export function renderHeader(){
     const headerTemplate= `
     <header>
     <div>        
         <ul>
             <h2>indeed</h2>
-            <li><a href="">Home</a></li>
+            <li><a href="" >Home</a></li>
             <li><a href="">Comapany review</a></li>
             <li><a href="">Salary guide</a></li>            
         </ul>
@@ -13,11 +15,10 @@ export function renderHeader(){
     <div>
         <span>Employers/Post Job</span>
     </div>
-    </header>
-
-   
+    </header>   
     `
-    document.querySelector('#app').innerHTML += headerTemplate 
+    document.querySelector('.header-div').innerHTML += headerTemplate       
+ 
 } 
 
 export function renderInputDiv(){
@@ -29,8 +30,16 @@ export function renderInputDiv(){
         <input type="search" id="companySearch" placeholder="Company">
         <button id="searchButton">Search</button>
         
-    </div>
-    
+        
+    </div>     
     `
     document.querySelector('#app').innerHTML += InputDivTemplate 
+   
 }
+//function sort by salary
+export function sortDataBySalary(jobSectionData) {    
+    console.log('sort data by salary')
+    const sortedData = jobSectionData.sort((a, b) => a.salary - b.salary);
+    renderData(sortedData);
+} 
+

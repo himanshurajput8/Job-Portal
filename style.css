@@ -6,7 +6,7 @@
 body{
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
- font-weight: 400;
+  font-weight: 400;
   font-style: normal;
   background-color: #FBF6E2;
  
@@ -22,6 +22,7 @@ header {
   width: 100%;
   background-color: #E68369 ; 
   color: white;
+  
 }
 
 header h2 {
@@ -77,6 +78,9 @@ input {
   color: white;
   font-weight: bold;
 }
+.inputDiv>:nth-child(5){  
+  width: 130px;
+}
 .inputDiv button:hover{
   background-color: rgb(46, 46, 46);
   transform: scale(1.1);
@@ -101,6 +105,10 @@ input {
   scroll-behavior: smooth;
   margin-top: 15px;
 }
+.left-div hr{
+  border: 1px solid rgb(0, 0, 0, 0.3);
+ }
+ 
 
 .left-div::-webkit-scrollbar {
   display: none;
@@ -121,7 +129,7 @@ input {
 }
 
 .left-div li:hover{
-  background-color: #E68369;
+  background-color: #f2b3a3;
  
   /* transform: scale(0.97); */
 }
@@ -138,6 +146,10 @@ input {
   font-size: larger;
   padding-right: 20px;
 }
+/* .left-div ul li.active {
+  background-color: red;
+  font-weight: bold;
+} */
 
 /* right-div */
 .right-div {
@@ -216,18 +228,87 @@ input {
   margin: 30px 0px 10px 0px;
 }
 
+/* apply job form  */
+.form-div{
+  width: 100%;
+  height: 100vh;
+  background-color: #f5bbad ; 
+  display: flex; 
+  justify-content: center;   
+  align-items: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form button{   
+  background-color: black;
+  color: white;
+  margin-top: 20px; 
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: large;
+}
+form button:hover{
+  background-color: rgb(91, 89, 89);
+}
+form input{
+  width: 400px;
+  border-radius: 5px;
+}
+
+.jobNotFound-container{
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #f5bbad ; 
+  border-radius: 20px;
+}
+.jobNotFound{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:  #E68369 ;
+  color: white;
+  border-radius: 50%; 
+  font-size: 1rem;
+  /* font-weight: bold; */
+}
+#animate-div{ 
+  animation: bounce; 
+  animation-duration: 1s;
+ animation-iteration-count: infinite;
+}
+.jobNotFound-img-container img{
+  width: 450px; 
+ position: absolute;
+ top: 250px;
+ right: 250px;
+  
+}
 
 footer{
   display: flex;
   width: 100%;
   margin-top: 20px;
-  background-color: black;
+  background-color: #E68369 ; 
   color: white;
   height: 100px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
+
+
 
 /* responsive code here */
 @media only screen and (max-width:600px){
@@ -262,40 +343,20 @@ footer{
         font-size: 1.3rem;
         margin-bottom: 20px;
         font-family: "Baskervville SC", serif;
-        font-weight: 800;
-  
+        font-weight: 800;  
+      }   
+      .jobNotFound{
+        width: 150px;
+        height: 150px;
+      } 
+      .jobNotFound-img-container img{
+        width: 280px; 
+       position: absolute;
+       top: 610px;
+       left: 210px;
+        
       }
-     
 }
 
-/* apply job form  */
-.form-div{
-  width: 100%;
-  height: 100vh;
-  background-color: #E68369;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-form button{
-  /* padding: 8px 15px; */
-  background-color: black;
-  color: white;
-  margin-top: 30px; 
-  outline: none;
-  border: none;
-  width: 400px;
-  height: 40px;
-  border-radius: 5px;
-  font-size: large;
-}
-form input{
-  width: 400px;
-  border-radius: 5px;
-}
+
 
