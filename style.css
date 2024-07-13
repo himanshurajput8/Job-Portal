@@ -295,6 +295,9 @@ form input{
  justify-content: center;
  align-items: center;  
 }
+.jobNotFound-img-container img{
+  width: 480px;              
+}
 
 footer{
   display: flex;
