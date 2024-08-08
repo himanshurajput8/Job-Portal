@@ -4,9 +4,10 @@ import { renderData } from "./job-section";
 export function renderHeader(){
     const headerTemplate= `
     <header>
+    <div><h2>indeed</h2></div
     <div>        
         <ul>
-            <h2>indeed</h2>
+            
             <li><a href="" >Home</a></li>
             <li><a href="">Comapany review</a></li>
             <li><a href="">Salary guide</a></li>            

@@ -74,8 +74,8 @@ export function displayJobDetails(dataId) {
                  <h2>Position: ${job.position}</h2>
                 <div class="img-div"><img src="${job.imageurl}"></div>               
                 <p><span>Company: </span>${job.company}</p>
-                <p><span>Location:</span> ${job.Location}</p>
-                <button class="apply-now" data-id="${job.id}">Apply now</button>
+                <p><span>Location:</span> ${job.Location}</p> 
+                <button class="apply-now" data-id="${job.id}">Apply now</button>    
             </div> 
             <div class="inner-right-div2"> 
                 <h2>Job Details</h2>  
@@ -93,10 +93,10 @@ export function displayJobDetails(dataId) {
             const id = this.getAttribute('data-id'); 
             navigate(`/apply/${id}`);
                                          
-        });
-    }
+        }); 
+    }  
 }
-// function filter data when search
+// function filter data when search  
 export function filterData() {
     var location = document.getElementById('locationSearch').value.toLowerCase();
     var Company = document.getElementById('companySearch').value.toLowerCase();
@@ -107,21 +107,21 @@ export function filterData() {
                 item.company.toLowerCase().includes(Company) &&
                 item.position.toLowerCase().includes(jobProfile)  
     });
-    renderData(filteredData); 
-}  
+    renderData(filteredData);
+}   
 
 // apply job form 
 export function jobForm(job) {      
     const formTemplate = `
     <div class="form-div">
         <form>
-            <h2>Apply for ${job.position} at ${job.company}</h2>
-            <input type="text" placeholder="Enter your name" >
+            <h2>Apply for ${job.position} at ${job.company}</h2>  
+            <input type="text" placeholder="Enter your name"> 
             <input type="email" placeholder="E-mail" >
             <input type="text" placeholder="mob. no.">
             <input type="text" placeholder="D.O.B" >
             <div>
-                     <button>Submit</button>
+                    <button>Submit</button>
                     <button id="back-button">Back</button>  
                    
             </div>         

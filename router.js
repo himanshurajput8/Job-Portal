@@ -57,8 +57,6 @@ window.addEventListener('popstate', router);
 
 
 
-
-
 // import { jobForm, jobSectionData } from "./job-section.js";
 
 // const routes = { 
